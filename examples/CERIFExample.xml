@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CERIF release="1.5" date="2012-10-17" sourceDatabase="Project Profile" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:iuvivo="http://vivo.iu.edu/ontology/iuvivo#" xmlns:owl2="http://www.w3.org/2006/12/owl2-xml#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:vivo="http://vivoweb.org/ontology/core#" xmlns="urn:xmlns:org:eurocris:cerif-1.5-1">
+    <cfProj>
+        <cfProjId>5798</cfProjId>
+        <cfAcro>KOLE</cfAcro>
+        <cfURI>https://www.kuali.org/ole</cfURI>
+        <cfStartDate>2001-01-01T00:00:00</cfStartDate>
+        <cfEndDate>2001-01-01T00:00:00</cfEndDate>
+        <cfProj_Class>
+            <cfClassId>0bd2d47a-8688-4758-a63c-45e76825a0f6</cfClassId>
+            <cfClassSchemeId>794234b8-25bb-46df-9d26-ae660bca64bc</cfClassSchemeId>
+        </cfProj_Class>
+        <cfProj_Fund>
+            <cfFundId>http://vivo.iu.edu/individual/n5798</cfFundId>
+            <cfAmount>12452.7</cfAmount>
+            <cfClassId>eda2b2e6-34c5-11e1-b86c-08000200c9a66</cfClassId>
+            <cfClassSchemeId>759af93b-34c5-11e1-b86c-0800200c9a66</cfClassSchemeId>
+            <cfStartDate>2001-01-01T00:00:00</cfStartDate>
+            <cfEndDate>2001-01-01T00:00:00</cfEndDate>
+        </cfProj_Fund>
+    </cfProj>
+    <cfPers>
+        <cfPersId>5798</cfPersId>
+        <cfGender>m</cfGender>
+        <cfURI>https://www.kuali.org/ole</cfURI>
+        <cfPersName>
+        <cfFirstNames>Geoffrey C.</cfFirstNames>
+    		<cfFamilyNames>Fox</cfFamilyNames>
+        </cfPersName>
+        <cfPersKeyw>
+            <cfKeyw>Job Maps</cfKeyw>
+        </cfPersKeyw>
+        <cfPers_OrgUnit>
+            <cfClassId>eda2b2e6-34c5-11e1-b86c-08000200c9a66</cfClassId>
+            <cfClassSchemeId>759af93b-34c5-11e1-b86c-0800200c9a66</cfClassSchemeId>
+            <cfStartDate>2001-01-01T00:00:00</cfStartDate>
+            <cfEndDate>2001-01-01T00:00:00</cfEndDate>
+        </cfPers_OrgUnit>
+    </cfPers>
+    <cfOrgUnit>
+        <cfOrgUnitId>5798</cfOrgUnitId>
+        <cfAcro>KOLE</cfAcro>
+        <cfURI>https://www.kuali.org/ole</cfURI>
+        <cfOrgUnitKeyw>
+            <cfKeyw>Job Maps</cfKeyw>
+        </cfOrgUnitKeyw>
+        <cfPers_OrgUnit>
+            <cfClassId>eda2b2e6-34c5-11e1-b86c-08000200c9a66</cfClassId>
+            <cfClassSchemeId>759af93b-34c5-11e1-b86c-0800200c9a66</cfClassSchemeId>
+            <cfStartDate>2001-01-01T00:00:00</cfStartDate>
+            <cfEndDate>2001-01-01T00:00:00</cfEndDate>
+        </cfPers_OrgUnit>
+    </cfOrgUnit>
+    <cfFund>
+        <cfFundId>98723148</cfFundId>
+        <cfURI>http://www.grants.org/</cfURI>
+        <cfAmount>27000</cfAmount>
+        <cfStartDate>2004-11-11T00:00:00</cfStartDate>
+        <cfEndDate>2004-11-21T00:00:00</cfEndDate>
+    </cfFund>
+    <cfResPubl>
+        <cfResPublId>69660048</cfResPublId>
+        <cfResPublDate>2021-11-21T00:00:00</cfResPublDate>
+        <cfNum>2</cfNum>
+        <cfVol>12</cfVol>
+        <cfEdition>1</cfEdition>
+        <cfIssue>1</cfIssue>
+        <cfStartPage>45</cfStartPage>
+        <cfEndPage>55</cfEndPage>
+        <cfTotalPage>55</cfTotalPage>
+        <cfISBN>978-3-540-44235-6</cfISBN>
+        <cfURI>http://vivoweb.org/harvest/mods/hyperlink/ref10245</cfURI>
+        <cfResPublAbstr>
+          <cfAbstr>
+          The KEGG Pathway database is a valuable collection of metabolic pathway maps. Nevertheless, the production of simulation capable metabolic networks from KEGG Pathway data is a challenging complicated work, regardless the already developed tools for this scope. Originally used for illustration purposes, KEGG Pathways through KGML (KEGG Markup Language) files, can provide complete reaction sets and introduce species versioning, which offers advantages for the scope of cellular metabolism simulation modelling. In this project, KEGGconverter is described, implemented also as a web-based application, which uses as source KGML files, in order to construct integrated pathway SBML models fully functional for simulation purposes.
+          </cfAbstr>
+        </cfResPublAbstr>
+        <cfResPublKeyw>
+            <cfKeyw>
+            Software; MapReduce; Metabolic pathway maps
+            </cfKeyw>
+        </cfResPublKeyw>
+        <cfResPubl_Event>
+           
+            <cfResPubl_Class>
+            <cfClassId>eda2d9ed-34c5- 11e1-b86c-0800200c9a66</cfClassId>
+             <cfClassSchemeId>a7e0dc90- 1be4-4fd9-9ff7-bdfb8a95a1eb</cfClassSchemeId>
+             <cfStartDate>2001-11-21T00:00:00</cfStartDate>
+             <cfEndDate>2001-11-22T00:00:00</cfEndDate>
+            </cfResPubl_Class>
+        </cfResPubl_Event>
+    </cfResPubl>
+    <cfResPat>
+        <cfResPatId>6234048</cfResPatId>
+        <cfRegistrDate>2001-11-11T00:00:00</cfRegistrDate>
+        <cfAprovDate>2001-11-21T00:00:00</cfAprovDate>
+        <cfURI>http://www.lalala.com</cfURI>
+        <cfPatentNumber>250</cfPatentNumber>
+        <cfResPatAbstr> 
+            <cfAbstr>
+            An alkali metal-containing, organometallic product, which is hydrocarbon-soluble, is prepared by reacting an organo-alkali metal reactant in which the alkali metal atom is bonded to a carbon atom, e.g. cyclohexyl-lithium, with a di(organooxy)-alkaline earth metal reactant, e.g. di-n-butoxy-magnesium, in an organic solvent at about -20° to +120°C. The organo-alkali metal reactant can be prepared by reacting an organo halide with an alkali metal, and this can be done in situ, i.e. in the presence of the di(organooxy)-alkaline earth metal reactant. The organometallic product has approximately the same chemical reactivity as the organo-alkali metal reactant from which it is prepared, but is more soluble in hydrocarbon solvents.
+            </cfAbstr>
+        </cfResPatAbstr>
+        <cfResPatKeyw>
+            <cfKeyw>Software; MapReduce</cfKeyw>
+        </cfResPatKeyw>
+        <cfOrgUnit_ResPat>
+            <cfClassId>eda2b2f0-34c5-11e1-b86c-0800200c9a66</cfClassId>
+            <cfClassSchemeId>6832797c-2f56-4336-b4ff-dc0ba2275dfa</cfClassSchemeId>
+            <cfStartDate>2011-11-11T00:00:00</cfStartDate>
+            <cfEndDate>2021-11-21T00:00:00</cfEndDate>
+        </cfOrgUnit_ResPat>
+    </cfResPat>
+    <cfSrv>
+        <cfSrvId>987148</cfSrvId>
+        <cfURI>http://www.oracle.com/</cfURI>
+    </cfSrv>
+    <cfEquip>
+        <cfEquipId>6234048</cfEquipId>
+        <cfURI>http://www.uah.es/</cfURI>
+        <cfFacil_Equip>
+            <cfClassId>cf7799e7-3477-11e1-b86c-0800200c9a66</cfClassId>
+            <cfClassSchemeId>794234b8-25bb-46df-9d26-ae660bca64bc</cfClassSchemeId>
+        </cfFacil_Equip>
+        <cfOrgUnit_Equip>
+            <cfClassId>cf7799e2-3477-11e1-b86c-0800200c9a66</cfClassId>
+            <cfClassSchemeId>794234b8-25bb-46df-9d26-ae660bca64bc</cfClassSchemeId>
+        </cfOrgUnit_Equip>
+        <cfEquip_Class>
+            <cfStartDate>2002-11-11T00:00:00</cfStartDate>
+            <cfEndDate>2002-11-21T00:00:00</cfEndDate>
+        </cfEquip_Class>
+    </cfEquip>
+    <cfEvent>
+        <cfEventId>62123148</cfEventId>
+        <cfURI>http://www.mtsr13.org/</cfURI>
+        <cfStartDate>2003-11-11T00:00:00</cfStartDate>
+        <cfEndDate>2003-11-21T00:00:00</cfEndDate>
+    </cfEvent>
+</CERIF>
