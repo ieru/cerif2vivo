@@ -6,17 +6,17 @@ and vice-versa. Developed in Alcalá University (Spain) by IERU
 research group (http://www.ieru.org/).                             
 Any incidence please submit to the email below.                    
 
-REQUIREMENTS
-
+Requirements
+============
 -Saxon
 
 Saxon is an XSLT and XQuery processor created by Michael Kay. There are open-source and also closed-source commercial versions.
 The latest version of Saxon is version 9.5, first released on 19 April 2013
 To execute our translator, we recomend Saxon-HE. Saxon-HE (home edition) is an open source product available under the Mozilla Public License version 1.0. It provides implementations of XSLT 2.0, XQuery 1.0, and XPath 2.0 at the basic level of conformance defined by W3C.
-We can download it form this link http://sourceforge.net/projects/saxon/files/Saxon-HE/9.5/SaxonHE9-5-1-3J.zip/download
+We can download it from this link http://sourceforge.net/projects/saxon/files/Saxon-HE/9.5/SaxonHE9-5-1-3J.zip/download
 
-INSTRUCTIONS
-
+Instructions
+============
 When you have decompressed the processor, you can use this commands to translate easily:
 
 Vivo-Cerif:
