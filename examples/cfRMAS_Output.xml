@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A file with examples of CERIF XML representation for information in the RMAS Output Area. Output subsumes cfResPubl; cfResPat; cfResProd -->
+<CERIF xmlns="urn:xmlns:org:eurocris:cerif-1.5-1" xsi:schemaLocation="urn:xmlns:org:eurocris:cerif-1.5-1 http://www.eurocris.org/Uploads/Web%20pages/CERIF-1.5/CERIF_1.5_1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" release="1.5" date="2012-10-07" sourceDatabase="Output Profile">
+<!-- all uuids employed in the below examples validate according to the CERIF 1.5 RMAS XML scheme -->
+<!-- most of the employed terms (via uuids) are incorporated in the latest CERIF 1.5 vocabulary --> 
+<!-- the latest CERIF vocabulary is available through euroCRIS: http://www.eurocris.org/CERIF-1.5/ -->
+	
+	<!-- A publication (output) record -->
+	<cfResPubl>	
+		<cfResPublId>2123451</cfResPublId>
+		<cfResPublDate>2009-10-31</cfResPublDate>
+		<cfVol>10</cfVol>
+		<cfIssue>1</cfIssue>
+		<cfStartPage>324</cfStartPage>
+		<cfISSN>1471-2105</cfISSN>
+		<cfURI>http://www.biomedcentral.com/1471-2105/10/324/</cfURI>	
+		<cfTitle cfLangCode="EN" cfTrans="o">KEGGconverter: a tool for the in-silico modelling of metabolic networks of the KEGG Pathways database</cfTitle>
+		<cfKeyw cfLangCode="EN" cfTrans="o">Software; Web-based applications; Metabolic pathway maps; KEGG Markup Language; Biomechanics</cfKeyw>
+		<cfAbstr cfLangCode="EN" cfTrans="o">The KEGG Pathway database is a valuable collection of metabolic pathway maps. Nevertheless, the production of simulation capable metabolic networks from KEGG Pathway data is a challenging complicated work, regardless the already developed tools for this scope. Originally used for illustration purposes, KEGG Pathways through KGML (KEGG Markup Language) files, can provide complete reaction sets and introduce species versioning, which offers advantages for the scope of cellular metabolism simulation modelling. In this project, KEGGconverter is described, implemented also as a web-based application, which uses as source KGML files, in order to construct integrated pathway SBML models fully functional for simulation purposes.</cfAbstr>
+		
+		<!-- this link entity is meant to describe output types -->
+		<cfResPubl_Class>
+			<!-- this is the uuid for the term "Journal Article" -->
+			<cfClassId>eda2d9e9-34c5-11e1-b86c-0800200c9a66</cfClassId>
+		    <!-- this is the uuid for the CERIF scheme  "Output Types" -->
+			<cfClassSchemeId>759af938-34ae-11e1-b86c-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2009-10-31T24:00:00</cfStartDate>
+		</cfResPubl_Class>
+		<!-- this link entity is meant to describe publication statuses -->	
+		<cfResPubl_Class>
+			<!-- this is the uuid for the term "Published" -->			
+			<cfClassId>e601872f-4b7e-4d88-929f-7df027b226c9</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Publication Statuses" -->				
+			<cfClassSchemeId>40e90e2f-446d-460a-98e5-5dce57550c48</cfClassSchemeId>
+			<cfStartDate>2009-10-31T24:00:00</cfStartDate>
+		</cfResPubl_Class>
+		<!-- this link entity is meant to indicate the peer review -->
+		<cfResPubl_Class>
+			<!-- this is the uuid for the term "Yes" -->
+			<cfClassId>df943548-c67e-4c96-8c4f-1c0aa144b1c0</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Peer Reviews" -->
+			<cfClassSchemeId>4bdfc4ac-7c74-456d-9d3b-b1e4267b90a9</cfClassSchemeId>
+			<cfStartDate>2009-10-31T24:00:00</cfStartDate>
+		</cfResPubl_Class>	
+		<!-- this link entity is meant to indicate the output quality levels --> 
+		<cfResPubl_Class>
+			<!-- this is the uuid for the term "Pending Grading" -->
+			<cfClassId>19258084-7068-4be1-8cfd-171952060f0c</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Output Quality Levels" --> 
+			<cfClassSchemeId>1332d166-4c65-481b-adde-aac0bdc475a3</cfClassSchemeId>
+			<cfStartDate>2009-10-31T24:00:00</cfStartDate>
+		</cfResPubl_Class>
+		<!-- this link entity is meant to describe a person's (publication) output contribution -->
+		<cfPers_ResPubl>
+			<!-- Person Output Contribution -->
+			<cfPersId>1123453</cfPersId>
+			<!-- this is the uuid for the term "Author" -->				
+			<cfClassId>49815870-1cfe-11e1-8bc2-0800200c9a66</cfClassId>
+			<!-- this is the CERIF Person Output Contribution Scheme uuid-->				
+			<cfClassSchemeId>b7135ad0-1d00-11e1-8bc2-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2009-10-01T00:00:00</cfStartDate>			
+		</cfPers_ResPubl>
+		<!-- this link entity is meant to describe an activity's (publication) output contribution -->
+		<cfProj_ResPubl>
+			<cfProjId>3123451</cfProjId>
+			<!-- this is the uuid for the term "Relation" -->
+			<cfClassId>eda28bc2-34c5-11e1-b86c-0800200c9a66</cfClassId>
+			<cfClassSchemeId>ad87a6e2-5093-4550-86da-ead48cc3f385</cfClassSchemeId>
+			<cfStartDate>2009-10-31T24:00:00</cfStartDate>
+		</cfProj_ResPubl>	
+		<!-- this link entity is meant to describe an inter-output relationships -->	
+		<cfResPubl_ResProd>
+			<cfResProdId>8123451</cfResProdId>
+			<!-- this is the uuid for the term "Relation" -->
+			<cfClassId>eda28bc2-34c5-11e1-b86c-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Inter-Output Relations" -->
+			<cfClassSchemeId>a7e0dc90-1be4-4fd9-9ff7-bdfb8a95a1eb</cfClassSchemeId>
+			<cfStartDate>2011-05-31T24:00:00</cfStartDate>
+		</cfResPubl_ResProd>
+		<!-- this link entity is meant to describe the open science costs -->	
+		<cfResPubl_Fund>
+			<cfFundId>4123452</cfFundId>
+			<!-- this is the uuid for the term "Gold OA" -->
+			<cfClassId>98072417-c98b-46dc-99aa-364bb672cd63</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Open Science Costs" -->
+			<cfClassSchemeId>e87469e5-d6bd-458c-b7ef-90e314749c51</cfClassSchemeId>
+			<cfStartDate>2009-10-31T24:00:00</cfStartDate>
+		</cfResPubl_Fund>
+		<!-- Embedded Federated identifiers for the publication - e.g. the DOI -->		
+		<cfFedId>
+			<cfFedIdId>14123451</cfFedIdId>
+			<!-- this is the DOI of the above publication -->
+			<cfFedId>10.1186/1471-2105-10-324</cfFedId> 
+			<cfStartDate>2009-10-31T24:00:00</cfStartDate>
+			<cfFedId_Class> 
+				<!-- this is the uuid for the term "DOI"  -->
+				<cfClassId>31d222b4-11e0-434b-b5ae-088119c51189</cfClassId>
+				<!-- this is the uuid for the CERIF scheme "Identifier Types" -->				
+				<cfClassSchemeId>bccb3266-689d-4740-a039-c96594b4d916</cfClassSchemeId>
+			</cfFedId_Class>
+			<!-- the Issuer of the identifier prefix is CrossRef -->
+			<cfFedId_Srv> 
+				<cfSrvId>5123451</cfSrvId>
+				<!-- this is the CERIF Issuer classification uuid -->				
+				<cfClassId>eda2b2e2-34c5-11e1-b86c-0800200c9a66</cfClassId>
+				<!-- this is the CERIF Identifier Service Roles Scheme uuid-->					
+				<cfClassSchemeId>5a270628-f593-4ff4-a44a-95660c76e182</cfClassSchemeId>
+			</cfFedId_Srv>
+			<!-- the Issuer of the identifier suffix is the publisher (BMC) -->
+			<cfFedId_Srv> 
+				<cfSrvId>5123452</cfSrvId>
+				<!-- this is the CERIF Issuer classification uuid -->				
+				<cfClassId>eda2b2e2-34c5-11e1-b86c-0800200c9a66</cfClassId>
+				<!-- this is the CERIF Identifier Service Roles Scheme uuid-->					
+				<cfClassSchemeId>5a270628-f593-4ff4-a44a-95660c76e182</cfClassSchemeId>
+			</cfFedId_Srv>			
+		</cfFedId>
+		<!-- an embedded federated identifier for this publication - represents the "Handle" -->	
+		<cfFedId>
+			<cfFedIdId>14123452</cfFedIdId>
+			<!-- this is the persistent Handle of the publication in the institutional repository -->
+			<cfFedId>10442/8849</cfFedId> 
+			<cfStartDate>2011-12-04T24:00:00</cfStartDate>			
+			<cfFedId_Class> 
+				<!-- this is the CERIF Handle uuid -->
+				<cfClassId>baaa59e1-745b-46e3-b068-aaa3dae9eef9</cfClassId>
+				<!-- this is the CERIF Identifier Types Scheme uuid-->				
+				<cfClassSchemeId>bccb3266-689d-4740-a039-c96594b4d916</cfClassSchemeId>
+			</cfFedId_Class>
+			<!-- the Issuer of the identifier suffix is the NHRF -->
+			<cfFedId_Srv> 
+				<cfSrvId>5123453</cfSrvId>
+				<!-- this is the CERIF Issuer classification uuid -->				
+				<cfClassId>eda2b2e2-34c5-11e1-b86c-0800200c9a66</cfClassId>
+				<!-- this is the CERIF Identifier Service Roles Scheme uuid-->					
+				<cfClassSchemeId>5a270628-f593-4ff4-a44a-95660c76e182</cfClassSchemeId>
+			</cfFedId_Srv>
+			<!-- the Issuer of the identifier prefix is the Handle System -->
+			<cfFedId_Srv> 
+				<cfSrvId>5123454</cfSrvId>
+				<!-- this is the CERIF Issuer classification uuid -->				
+				<cfClassId>eda2b2e2-34c5-11e1-b86c-0800200c9a66</cfClassId>
+				<!-- this is the CERIF Identifier Service Roles Scheme uuid-->					
+				<cfClassSchemeId>5a270628-f593-4ff4-a44a-95660c76e182</cfClassSchemeId>
+			</cfFedId_Srv>			
+		</cfFedId>
+	</cfResPubl>
+	
+	<!-- A publication record -->
+	<cfResPubl>
+		<!-- usual CERIF attributes for ResultPublication -->		
+		<cfResPublId>2123452</cfResPublId>
+		<cfResPublDate>2011-05-31</cfResPublDate>
+		<cfVol>12</cfVol>
+		<cfIssue>1</cfIssue>
+		<cfStartPage>238</cfStartPage>
+		<cfISSN>1471-2164</cfISSN>
+		<cfURI>http://www.biomedcentral.com/1471-2164/12/238</cfURI>
+		<cfTitle cfLangCode="EN" cfTrans="o">Escherichia coli genome-wide promoter analysis: Identification of additional AtoC binding target elements</cfTitle>
+		<cfAbstr cfLangCode="EN" cfTrans="o">Studies on bacterial signal transduction systems have revealed complex networks of functional interactions, where the response regulators play a pivotal role. The AtoSC system of E. coli activates the expression of atoDAEB operon genes, and the subsequent catabolism of short-chain fatty acids, upon acetoacetate induction. Transcriptome and phenotypic analyses suggested that atoSC is also involved in several other cellular activities, although we have recently reported a palindromic repeat within the atoDAEB promoter as the single, cis-regulatory binding site of the AtoC response regulator. In this work, we used a computational approach to explore the presence of yet unidentified AtoC binding sites within other parts of the E. coli genome.</cfAbstr>	
+		<!-- this link entity is meant to describe the type of publication -->
+		<cfResPubl_Class>
+			<!-- this is the uuid for the term "Journal Article" -->
+			<cfClassId>eda2d9e9-34c5-11e1-b86c-0800200c9a66</cfClassId>
+			<cfClassSchemeId>759af938-34ae-11e1-b86c-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2011-05-31T24:00:00</cfStartDate>
+			<cfEndDate>2038-12-31T24:00:00</cfEndDate>
+		</cfResPubl_Class>
+		<!-- this link entity is meant to describe the publication status -->
+		<cfResPubl_Class>
+			<!-- this is the uuid for term "Published" -->			
+			<cfClassId>e601872f-4b7e-4d88-929f-7df027b226c9</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Publication Statuses" -->				
+			<cfClassSchemeId>40e90e2f-446d-460a-98e5-5dce57550c48</cfClassSchemeId>
+			<cfStartDate>2011-05-31T24:00:00</cfStartDate>
+		</cfResPubl_Class>	
+		<!-- this link entity is meant to indicate peer reviews -->		
+		<cfResPubl_Class>
+			<!-- this is the uuid for the term "Yes" -->
+			<cfClassId>df943548-c67e-4c96-8c4f-1c0aa144b1c0</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Peer Reviews" -->
+			<cfClassSchemeId>4bdfc4ac-7c74-456d-9d3b-b1e4267b90a9</cfClassSchemeId>
+			<cfStartDate>2011-05-31T24:00:00</cfStartDate>
+		</cfResPubl_Class>
+		<!-- this link entity is meant to describe the (publication) output quality level -->
+		<cfResPubl_Class>
+		    <!-- this is the uuid for the term "Pending Grading" -->
+			<cfClassId>19258084-7068-4be1-8cfd-171952060f0c</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Output Quality Levels" -->
+			<cfClassSchemeId>1332d166-4c65-481b-adde-aac0bdc475a3</cfClassSchemeId>
+			<cfStartDate>2011-05-31T24:00:00</cfStartDate>
+			<cfEndDate>2014-06-01T24:00:00</cfEndDate>
+		</cfResPubl_Class>
+		<!-- this link entity is meant to describe a person (publication) output contribution -->	
+		<cfPers_ResPubl>
+			<cfPersId>1123453</cfPersId>
+			<!-- this is the uuid for the term "Author" -->				
+			<cfClassId>49815870-1cfe-11e1-8bc2-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Output Contributions" -->				
+			<cfClassSchemeId>b7135ad0-1d00-11e1-8bc2-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2011-05-31T24:00:00</cfStartDate>		
+		</cfPers_ResPubl>
+		<!-- this link is meant to describe inter-output relationships -->
+		<cfResPubl_ResPubl>
+			<cfResPublId2>2123451</cfResPublId2>
+			<!-- this is the uuid for the term "Built On" -->
+			<cfClassId>eda28bc9-34c5-11e1-b86c-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Inter-Output Relations" -->
+			<cfClassSchemeId>a7e0dc90-1be4-4fd9-9ff7-bdfb8a95a1eb</cfClassSchemeId>
+			<cfStartDate>2011-05-31T24:00:00</cfStartDate>
+		</cfResPubl_ResPubl>
+		<!-- this link is meant to describe inter-output relationships -->		
+		<cfResPubl_ResPat>
+			<cfResPatId>7123451</cfResPatId>
+			<!-- this is the uuid for the term "Built On" -->
+			<cfClassId>eda28bc9-34c5-11e1-b86c-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Inter-Output Relations" -->
+			<cfClassSchemeId>a7e0dc90-1be4-4fd9-9ff7-bdfb8a95a1eb</cfClassSchemeId>
+			<cfStartDate>2010-04-01T00:00:00</cfStartDate>
+		</cfResPubl_ResPat>
+		<!-- this link is meant to describe the open science costs -->		
+		<cfResPubl_Fund>
+			<cfFundId>4123452</cfFundId>
+			<!-- this is the uuid for the term "Gold Open Access" -->
+			<cfClassId>98072417-c98b-46dc-99aa-364bb672cd63</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Open Science Costs" -->
+			<cfClassSchemeId>e87469e5-d6bd-458c-b7ef-90e314749c51</cfClassSchemeId>
+			<cfStartDate>2011-05-31T24:00:00</cfStartDate>
+		</cfResPubl_Fund>
+	</cfResPubl>	
+	
+	<!-- A Software record  -->
+	<cfResProd>
+		<cfResProdId>8123451</cfResProdId>	
+		<cfName cfLangCode="EN" cfTrans="o">KEGGconverter</cfName>
+		<cfKeyw cfLangCode="EN" cfTrans="o">KEGG; KGML; converter; metabolic pathways</cfKeyw>
+		<cfDescr cfLangCode="EN" cfTrans="o">KEGGconverter is capable of producing integrated analogues of metabolic pathways appropriate for simulation tasks, by inputting only KGML files. The web application acts as a user friendly shell which transparently enables the automated biochemically correct pathway merging, conversion to SBML format, proper renaming of the species, and insertion of default kinetic properties for the pertaining reactions.</cfDescr>
+		<!-- this link entity is meant to describe the output type -->
+		<cfResProd_Class>
+			<!-- this is the uuid for the term "Software" -->
+			<cfClassId>5b90f961-6489-4500-bb6a-5b60ead25a2d</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Output Types" -->
+			<cfClassSchemeId>759af938-34ae-11e1-b86c-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2011-03-31T24:00:00</cfStartDate>
+		</cfResProd_Class>
+		<!-- this link entity is meant to describe a person's output contribution (see also RMAS Person example) -->
+		<cfPers_ResProd>
+			<cfPersId>1123453</cfPersId>
+			<!-- this is the uuid for the term "Contributor" -->				
+			<cfClassId>e4d7b130-1cfd-11e1-8bc2-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Output Contributions" -->				
+			<cfClassSchemeId>b7135ad0-1d00-11e1-8bc2-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2011-03-31T24:00:00</cfStartDate>			
+		</cfPers_ResProd>
+		<!-- this link entity is meant to describe an activity's output contribution -->
+		<cfProj_ResProd>
+			<cfProjId>3123451</cfProjId>
+			<!-- this is the uuid for the term "Relation" -->
+			<cfClassId>eda28bc2-34c5-11e1-b86c-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF Scheme "Activity Output Contributions" -->
+			<cfClassSchemeId>ad87a6e2-5093-4550-86da-ead48cc3f385</cfClassSchemeId>
+			<cfStartDate>2011-03-31T24:00:00</cfStartDate>
+		</cfProj_ResProd>
+		<!-- the federated identifier URL of the software -->
+		<cfFedId>
+			<cfFedIdId>14123452</cfFedIdId>
+			<!-- this is the website URL of the software  -->
+			<cfFedId>http://www.url.org/KEGGconverter/</cfFedId> 
+			<cfStartDate>2011-12-04T24:00:00</cfStartDate>			
+			<cfFedId_Class> 
+				<!-- this is the uuid for the term "URL" -->
+				<cfClassId>baaa59e1-745b-46e3-b068-aaa3dae9eef9</cfClassId>
+				<!-- this is the uuid for the CERIF scheme "Identifier Types" -->				
+				<cfClassSchemeId>bccb3266-689d-4740-a039-c96594b4d916</cfClassSchemeId>
+			</cfFedId_Class>
+		</cfFedId>				
+	</cfResProd>
+
+	<!-- A patent record -->	
+	<cfResPat>	
+		<cfResPatId>7123451</cfResPatId>
+		<cfTitle cfLangCode="EN" cfTrans="o">Alkali metal-containing, organometallic products</cfTitle>
+		<cfKeyw cfLangCode="EN" cfTrans="o">organometallic products</cfKeyw>
+		<cfAbstr cfLangCode="EN" cfTrans="o">An alkali metal-containing, organometallic product, which is hydrocarbon-soluble, is prepared by reacting an organo-alkali metal reactant in which the alkali metal atom is bonded to a carbon atom, e.g. cyclohexyl-lithium, with a di(organooxy)-alkaline earth metal reactant, e.g. di-n-butoxy-magnesium, in an organic solvent at about -20° to +120°C. The organo-alkali metal reactant can be prepared by reacting an organo halide with an alkali metal, and this can be done in situ, i.e. in the presence of the di(organooxy)-alkaline earth metal reactant. The organometallic product has approximately the same chemical reactivity as the organo-alkali metal reactant from which it is prepared, but is more soluble in hydrocarbon solvents.</cfAbstr>
+		<!-- this link entity is meant to describe the (output) type -->
+		<cfResPat_Class>
+			<!-- this is the uuid for the term "Patent published / application" -->
+			<cfClassId>274e99d8-1e36-4b3e-a998-2a3384e79f64</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Output Types" -->
+			<cfClassSchemeId>759af938-34ae-11e1-b86c-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2010-04-01T00:00:00</cfStartDate>
+		</cfResPat_Class>	
+		<!-- this link entity is meant to describe the publication statuses -->
+		<cfResPat_Class>
+			<!-- this is the uuid for term "Published" -->			
+			<cfClassId>e601872f-4b7e-4d88-929f-7df027b226c9</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Publication Statuses" -->				
+			<cfClassSchemeId>40e90e2f-446d-460a-98e5-5dce57550c48</cfClassSchemeId>
+			<cfStartDate>2010-04-01T00:00:00</cfStartDate>
+		</cfResPat_Class>
+		<!-- this link entity is meant to describe a person's output contribution (see also RMAS Person example) -->	
+		<cfPers_ResPat>
+			<cfPersId>1123453</cfPersId>
+			<!-- this is the uuid for the term "Contributor" -->				
+			<cfClassId>e4d7b130-1cfd-11e1-8bc2-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Output Contributions" -->				
+			<cfClassSchemeId>b7135ad0-1d00-11e1-8bc2-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2010-04-01T00:00:00</cfStartDate>		
+		</cfPers_ResPat>		
+	</cfResPat>
+	
+	<!-- A service record -->	
+	<cfSrv>		
+		<cfSrvId>5123451</cfSrvId>	
+		<cfName cfLangCode="en" cfTrans="o">CrossRef DOI prefix service</cfName>
+		<cfDescr cfLangCode="en" cfTrans="o">The service of issuing DOI prefixes to publishers</cfDescr>
+		<cfKeyw cfLangCode="en" cfTrans="o">persistent identifier; Digital Object Identifier</cfKeyw>
+	</cfSrv>
+	<!-- A service record -->	
+	<cfSrv>		
+		<cfSrvId>5123452</cfSrvId>	
+		<cfName cfLangCode="en" cfTrans="o">BMC service</cfName>
+		<cfDescr cfLangCode="en" cfTrans="o">The publisher service of issuing DOI suffixes to new articles</cfDescr>
+		<cfKeyw cfLangCode="en" cfTrans="o">persistent identifier; Digital Object Identifier</cfKeyw>
+	</cfSrv>
+	<!-- A Service record -->	
+	<cfSrv>		
+		<cfSrvId>5123453</cfSrvId>
+		<!-- a couple of multiple-language attributes -->		
+		<cfName cfLangCode="en" cfTrans="o">NHRF Repository</cfName>
+		<cfDescr cfLangCode="en" cfTrans="o">The NHRF Repository produces suffixes to issue complete Handle identifiers new for new items</cfDescr>
+		<cfKeyw cfLangCode="en" cfTrans="o">persistent identifier; Handle</cfKeyw>
+	</cfSrv>
+	<!-- A Service record -->	
+	<cfSrv>	
+		<cfSrvId>5123454</cfSrvId>
+		<cfName cfLangCode="en" cfTrans="o">Handle System prefix service</cfName>
+		<cfDescr cfLangCode="en" cfTrans="o">">The service of issuing Handle system prefixes for use by third parties</cfDescr>
+		<cfKeyw cfLangCode="en" cfTrans="o">persistent identifier; Handle</cfKeyw>
+	</cfSrv>
+</CERIF>

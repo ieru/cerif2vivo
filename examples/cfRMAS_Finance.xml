@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A file with examples of CERIF XML representation for information in the RMAS Finance Area -->
+<CERIF xmlns="urn:xmlns:org:eurocris:cerif-1.5-1" xsi:schemaLocation="urn:xmlns:org:eurocris:cerif-1.5-1 http://www.eurocris.org/Uploads/Web%20pages/CERIF-1.5/CERIF_1.5_1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" release="1.5" date="2012-10-07" sourceDatabase="Finance Profile">
+<!-- all uuids employed in the below examples validate according to the CERIF 1.5 RMAS XML scheme -->
+<!-- most of the employed terms (via uuids) are incorporated in the latest CERIF 1.5 vocabulary --> 
+<!-- the latest CERIF vocabulary is available through euroCRIS: http://www.eurocris.org/CERIF-1.5/ -->
+
+	<!-- A Funding record -->
+	<cfFund>
+		<cfFundId>4123451</cfFundId>	
+		<cfName cfLangCode="EN" cfTrans="o">ICT - Information and Communication Technologies</cfName>
+		<cfKeyw cfLangCode="EN" cfTrans="o">ICT; Information and Communication Technologies</cfKeyw>
+		<cfDescr cfLangCode="EN" cfTrans="o">The objective of ICT research under the EU’s Seventh Framework Programme (FP7) is to improve the competitiveness of European industry – as well as to enable Europe to master and shape the future developments of these technologies so that the demands of its society and economy are met.</cfDescr>	
+		<!-- this link entity is meant to describe the type of funding -->
+		<cfFund_Class>
+			<!-- this is the uuid for the term "Funding Programme" -->
+			<cfClassId>eda2b2e6-34c5-11e1-b86c-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Funding Source Types" -->
+			<cfClassSchemeId>759af93b-34ae-11e1-b86c-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2006-01-01T00:00:00</cfStartDate>
+			<cfEndDate>2013-12-31T24:00:00</cfEndDate>
+		</cfFund_Class>	
+		<!-- this is the link entity to refer to a funded project that received a contract -->
+		<cfProj_Fund>
+			<cfProjId>3123451</cfProjId>
+			<!-- this is the uuid for the term "Contract" -->			
+			<cfClassId>125a3e36-a300-449f-abfa-11178d87ba63</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Funding Types" -->				
+			<cfClassSchemeId>a620795c-7015-482e-bdba-43a761b337a1</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>
+		</cfProj_Fund>		
+	</cfFund>
+	
+	<!-- this is a measurement record -->
+	<!-- each measurement has its own ID and could be further classified or linked -->
+	<cfMeas>
+		<cfMeasId>11123451</cfMeasId>
+		<cfValFloatP>1300000</cfValFloatP>
+		<cfName cfLangCode="EN" cfTrans="o">Payment to partner for the e-Lico project</cfName>
+		<cfKeyw cfLangCode="EN" cfTrans="o">payment; e-Lico</cfKeyw>
+		<cfDescr cfLangCode="EN" cfTrans="o">funds received from the funder by the co-ordinator on behalf of the partners for the e-Lico project</cfDescr>
+		<!-- this link entity is meant to describe the activity's finance category -->
+		<cfProj_Meas>
+			<cfProjId>3123451</cfProjId>
+			<!-- this is the uuid for the term "Payment-To-Partner" -->			
+			<cfClassId>dd9bb430-17b3-4064-bd1f-528237bd4e48</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Finance Categories" -->				
+			<cfClassSchemeId>c855b95d-bf01-44eb-a1f3-17b0f0901599</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>			
+		</cfProj_Meas>		
+	</cfMeas>	
+	
+	<!-- this is another measurement record -->	
+	<cfMeas>		
+		<cfMeasId>11123452</cfMeasId>
+		<cfValFloatP>4468853</cfValFloatP>	
+		<cfName cfLangCode="EN" cfTrans="o">Expenditure budget for the e-Lico project</cfName>
+		<cfKeyw cfLangCode="EN" cfTrans="o">expenditure budget; total budget; e-Lico project</cfKeyw>
+		<cfDescr cfLangCode="EN" cfTrans="o">Total budget for the e-Lico project</cfDescr>
+		<!-- this link entity is meant to describe an activity's finance category amount -->
+		<cfProj_Meas>
+			<cfProjId>3123451</cfProjId>
+			<!-- this is the uuid for the term "Expenditure-Budget" -->			
+			<cfClassId>d2c2d808-bd02-4ffc-8a76-76c3d0c9cc1f</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Finance Category Amount" -->				
+			<cfClassSchemeId>63468e45-3055-4ba8-b644-6262c96f62bd</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>		
+		</cfProj_Meas>		
+	</cfMeas>
+	
+	<!-- this is another measurement record -->		
+	<cfMeas>	
+		<cfMeasId>11123453</cfMeasId>
+		<cfValFloatP>3417403</cfValFloatP>
+		<cfName cfLangCode="EN" cfTrans="o">Income Budget for the e-Lico project</cfName>
+		<cfKeyw cfLangCode="EN" cfTrans="o">income budget; EC contribution; e-Lico project</cfKeyw>
+		<cfDescr cfLangCode="EN" cfTrans="o">The budget awarded by the EC to the e-Lico project</cfDescr>
+		<!-- this link entity is meant to describe an activity's finance category amount -->
+		<cfProj_Meas>
+			<cfProjId>3123451</cfProjId>
+			<!-- this is the uuid for the term "Income-Budget" -->				
+			<cfClassId>7655a603-a4d7-4b92-8c87-d7e767d2c7a7</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Finance Category Amount" -->					
+			<cfClassSchemeId>63468e45-3055-4ba8-b644-6262c96f62bd</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>		
+		</cfProj_Meas>		
+	</cfMeas>	
+	
+	<!-- this is another measurement record -->		
+	<cfMeas>	
+		<cfMeasId>11123454</cfMeasId>
+		<cfValFloatP>1051450</cfValFloatP>	
+		<cfName cfLangCode="EN" cfTrans="o">fEC Balancing Amount for the e-Lico project</cfName>
+		<cfKeyw cfLangCode="EN" cfTrans="o">fEC Balancing Amount; e-Lico project</cfKeyw>
+		<cfDescr cfLangCode="EN" cfTrans="o">The difference between the full economic costs of the e-Lico project and the amount awarded by the funder.</cfDescr>
+		<!-- this link entity is meant to describe an activity's finance category  -->
+		<cfProj_Meas>
+			<cfProjId>3123451</cfProjId>
+			<!-- this is the uuid for the term "fEC Balancing Amount" -->	
+			<cfClassId>b2aeb46d-3ae2-4df6-aaad-079a339da9d2</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Finance Categories" -->				
+			<cfClassSchemeId>c855b95d-bf01-44eb-a1f3-17b0f0901599</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>		
+		</cfProj_Meas>		
+	</cfMeas>
+</CERIF>

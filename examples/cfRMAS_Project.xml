@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A file with examples of CERIF XML representation for information in the RMAS Projects Area - includes also information about Organisations -->
+<CERIF xmlns="urn:xmlns:org:eurocris:cerif-1.5-1" xsi:schemaLocation="urn:xmlns:org:eurocris:cerif-1.5-1 http://www.eurocris.org/Uploads/Web%20pages/CERIF-1.5/CERIF_1.5_1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" release="1.5" date="2012-10-17" sourceDatabase="Project Profile">	
+<!-- all uuids employed in the below examples validate according to the CERIF 1.5 RMAS XML scheme -->
+<!-- most of the employed terms (via uuids) are incorporated in the latest CERIF 1.5 vocabulary --> 
+<!-- the latest CERIF vocabulary is available through euroCRIS: http://www.eurocris.org/CERIF-1.5/ -->
+
+	<!-- A project record -->
+	<cfProj>
+		<cfProjId>3123451</cfProjId>
+		<cfAcro>e-Lico</cfAcro>
+		<cfTitle cfLangCode="EN" cfTrans="o">e-Laboratory for interdisciplinary collaborative research in data mining and data-intensive sciences</cfTitle>
+		<cfKeyw cfLangCode="EN" cfTrans="o">data mining; collaborative e-science; biomarker discovery; ontology engineering; pathway modelling</cfKeyw>
+		<cfAbstr cfLangCode="EN" cfTrans="o">The goal of the e-LICO project is to build a virtual laboratory for interdisciplinary collaborative research in data mining and data-intensive sciences. The proposed e-lab comprises three layers: the e-science layer and the data mining layer form a generic knowledge discovery platform that can be adapted to different scientific domains by customizing the application layer. The project's overall research strategy can be summarized as the bottom-up construction of this three-tiered architecture</cfAbstr>
+		<!-- this link entity is meant to describe the activity type -->	
+		<cfProj_Class>
+			<!-- this is the uuid for the term "Project" -->			
+			<cfClassId>cf7799e1-3477-11e1-b86c-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Types" -->					
+			<cfClassSchemeId>47c7efda-bb6e-44ad-bfd3-8be5b6b5cd02</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T00:00:00</cfEndDate>
+		</cfProj_Class>
+		<!-- this link entity is meant to describe an activity subtype -->		
+		<cfProj_Class>
+			<!-- this is the uuid for the term "Networking" -->				
+			<cfClassId>67f2c93f-37c9-4311-99e7-61d40d53b265</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Subtypes" -->				
+			<cfClassSchemeId>794234b8-25bb-46df-9d26-ae660bca64bc</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>
+		</cfProj_Class>		
+		<!-- this link entity is meant to describe a person's project engagement -->			
+		<cfProj_Pers>
+			<cfPersId>1123452</cfPersId>
+			<!-- this is the uuid for the term "Principal Investigator" -->				
+			<cfClassId>b0e11470-1cfd-11e1-8bc2-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Project Engagements" -->				
+			<cfClassSchemeId>794234b8-25bb-46df-9d26-ae660bca64bc</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>
+		</cfProj_Pers>
+		<!-- this link entity is meant to describe a person's project engagement -->	
+		<cfProj_Pers>
+			<cfPersId>1123453</cfPersId>
+			<!-- this is the uuid for the term "Highly Qualified Personnel" -->					
+			<cfClassId>65c14308-310c-4198-be0b-43a6a1697038</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Project Engagements" -->				
+			<cfClassSchemeId>94fefd50-1d00-11e1-8bc2-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>		
+		</cfProj_Pers>		
+		<!-- this link entity is meant to describe a person's project engagement -->	
+		<cfProj_Pers>
+			<cfPersId>1123453</cfPersId>
+			<!-- this is the uuid for the term "Collaborator" -->				
+			<cfClassId>541b4224-a784-49b7-a341-8275ce874ada</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Project Engagements" -->				
+			<cfClassSchemeId>94fefd50-1d00-11e1-8bc2-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>		
+		</cfProj_Pers>
+		<!-- this link entity is meant to describe an organisation's project engagement -->	
+		<cfProj_OrgUnit>
+			<cfOrgUnitId>6123451</cfOrgUnitId>
+			<!-- this is the uuid for the term "Coordinator" -->				
+			<cfClassId>c31d3380-1cfd-11e1-8bc2-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Organisation Project Engagements" -->				
+			<cfClassSchemeId>6b2b7d25-3491-11e1-b86c-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>
+		</cfProj_OrgUnit>
+		<!-- this link entity is meant to describe an organisation's project engagement -->	
+		<cfProj_OrgUnit>
+			<cfOrgUnitId>6123452</cfOrgUnitId>
+			<!-- this is the uuid for the term "Partner" -->				
+			<cfClassId>c77f9885-b80d-466a-9097-9768720c0fe1</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Organisation Project Engagements" -->					
+			<cfClassSchemeId>6b2b7d25-3491-11e1-b86c-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>
+		</cfProj_OrgUnit>		
+		<!-- this link entity is meant to describe an activity funding relation -->	
+		<cfProj_Fund>
+			<cfFundId>4123451</cfFundId>
+			<!-- this is the uuid for the term "Contract" -->			
+			<cfClassId>125a3e36-a300-449f-abfa-11178d87ba63</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Funding Types" -->				
+			<cfClassSchemeId>a620795c-7015-482e-bdba-43a761b337a1</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>
+		</cfProj_Fund>
+		<!-- this link entity is meant to indicate an activity status -->	
+		<cfProj_Class>
+		    <!-- this is the uuid for the term "Closed" -->
+			<cfClassId>276a4f0c-6729-47df-b8d3-7cd1cb3c7e67</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Statuses" -->				
+			<cfClassSchemeId>759af93a-34ae-11e1-b86c-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2012-02-01T24:00:00</cfStartDate>
+		</cfProj_Class>	
+		<!-- this link entity is meant to describe an activity's (publication) output contribution -->		
+		<cfProj_ResPubl>
+			<cfResPublId>2123451</cfResPublId>
+			<!-- this is the uuid for term "Relation" -->
+			<cfClassId>eda28bc2-34c5-11e1-b86c-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Output Contribution"  -->
+			<cfClassSchemeId>ad87a6e2-5093-4550-86da-ead48cc3f385</cfClassSchemeId>
+			<cfStartDate>2009-10-31T24:00:00</cfStartDate>
+		</cfProj_ResPubl>
+		<!-- this link entity is meant to describe an activity's (dataset) output contribution -->	
+		<cfProj_ResProd>
+			<cfResProdId>8123451</cfResProdId>
+			<!-- this is the uuid for  term "Relation" -->
+			<cfClassId>eda28bc2-34c5-11e1-b86c-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Output Contribution"  -->
+			<cfClassSchemeId>ad87a6e2-5093-4550-86da-ead48cc3f385</cfClassSchemeId>
+			<cfStartDate>2011-03-31T24:00:00</cfStartDate>
+		</cfProj_ResProd>		
+		<!-- this link entity is meant to describe a project-related measurement, e.g. payment to partner (see also RMAS Finance example) -->
+		<cfProj_Meas>
+			<cfMeasId>111234511</cfMeasId>
+			<!-- this is the uuid for the term "Payment-To-Partner" -->			
+			<cfClassId>dd9bb430-17b3-4064-bd1f-528237bd4e48</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Finance Categories" -->				
+			<cfClassSchemeId>c855b95d-bf01-44eb-a1f3-17b0f0901599</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>			
+		</cfProj_Meas>
+		<!-- this link entity is meant to describe a project-related measurement, e.g. expenditure budget (see also RMAS Finance example) -->
+		<cfProj_Meas>
+			<cfMeasId>11123452</cfMeasId>
+			<!-- this is the uuid for the term "Expenditure-Budget" -->			
+			<cfClassId>d2c2d808-bd02-4ffc-8a76-76c3d0c9cc1f</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Finance Categories" -->				
+			<cfClassSchemeId>63468e45-3055-4ba8-b644-6262c96f62bd</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>		
+		</cfProj_Meas>
+		<!-- this link entity is meant to describe a project-related measurement, e.g. income budget (see also RMAS Finance example)-->
+		<cfProj_Meas>
+			<cfMeasId>11123453</cfMeasId>
+			<!-- this is the uuid for the term "Income-Budget" -->				
+			<cfClassId>7655a603-a4d7-4b92-8c87-d7e767d2c7a7</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Finance Categories" -->					
+			<cfClassSchemeId>63468e45-3055-4ba8-b644-6262c96f62bd</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>		
+		</cfProj_Meas>	
+		<!-- this link entity is meant to describe a project-related measurement, e.g. fEC Balancing Amount (see also RMAS Finance example) -->
+		<cfProj_Meas>
+			<cfMeasId>11123454</cfMeasId>
+			<!-- this is the uuid for the term "fEC Balancing Amount" -->	
+			<cfClassId>b2aeb46d-3ae2-4df6-aaad-079a339da9d2</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Activity Finance Categories" -->				
+			<cfClassSchemeId>c855b95d-bf01-44eb-a1f3-17b0f0901599</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>		
+		</cfProj_Meas>
+		<!-- An embedded federated identifier entity for the project record - e.g. funding ID -->		
+		<cfFedId>
+			<!-- this is the internal identifier of the federated identifier record -->
+			<cfFedIdId>14123454</cfFedIdId>
+			<!-- this is the public funding ID of the project -->
+			<cfFedId>FP7-01-21020</cfFedId> 
+			<cfStartDate>2008-09-01T00:00:00</cfStartDate>					
+		</cfFedId>		
+	</cfProj>
+	
+	<!-- Within the Project area, RMAS agreed to have a subarea organisation -->
+	<!-- An organisation record -->
+	<cfOrgUnit>
+		<cfOrgUnitId>6123451</cfOrgUnitId>
+		<cfName cfLangCode="EN" cfTrans="o">University of Oxford</cfName>
+		<cfResAct cfLangCode="EN" cfTrans="o">Interdisciplinary research and education</cfResAct>
+		<cfKeyw cfLangCode="EN" cfTrans="o">Research; Education</cfKeyw>
+		<!-- this link entity is meant to describe the organistion as an HE institute -->
+		<cfOrgUnit_Class>
+			<!-- this is the uuid for term "Higher Education" -->	
+			<cfClassId>eda2b2f4-34c5-11e1-b86c-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Organisation Types"  -->	
+			<cfClassSchemeId>759af939-34ae-11e1-b86c-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>1096-01-01T00:00:00</cfStartDate>
+		</cfOrgUnit_Class>
+		<!-- this link entity is meant to refer to an organisation's contact details" -->
+		<cfOrgUnit_PAddr>
+			<cfPAddrId>10123451</cfPAddrId>
+			<!-- this is the uuid for the term "Organisation Legal Postal Address" -->	
+			<cfClassId>3e480ccf-15cd-4e73-bdcc-d0d3c73a405c</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Organisation Contact Details"  -->	
+			<cfClassSchemeId>fee53e30-de3a-421b-80e0-9b3fe3a3c170</cfClassSchemeId>
+			<cfStartDate>1920-01-01T00:00:00</cfStartDate>
+		</cfOrgUnit_PAddr>	
+	</cfOrgUnit>
+
+	<!-- Another organisation record -->
+	<cfOrgUnit>
+		<cfOrgUnitId>6123452</cfOrgUnitId>
+		<cfName cfLangCode="EN" cfTrans="o">National Hellenic Research Foundation</cfName>
+		<cfResAct cfLangCode="EN" cfTrans="o">Research in the Natural Sciences and the Humanities</cfResAct>
+		<cfKeyw cfLangCode="EN" cfTrans="o">Research; Natural Sciences; Humanities</cfKeyw>
+		<!-- This link entity is meant to describe the organisation type -->
+		<cfOrgUnit_Class>
+			<!-- this is the uuid for the term "Research Institute" -->	
+			<cfClassId>eda2b2ef-34c5-11e1-b86c-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Organisation Types" -->	
+			<cfClassSchemeId>759af939-34ae-11e1-b86c-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>1958-01-01T00:00:00</cfStartDate>
+		</cfOrgUnit_Class>
+		<!-- this link entity is meant to refer to an organisation's contact details" -->
+		<cfOrgUnit_PAddr>
+			<cfPAddrId>10123452</cfPAddrId>
+			<!-- this is the uuid for term "Organisation Legal Postal Address" -->	
+			<cfClassId>3e480ccf-15cd-4e73-bdcc-d0d3c73a405c</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Organisation Contact Details" -->	
+			<cfClassSchemeId>fee53e30-de3a-421b-80e0-9b3fe3a3c170</cfClassSchemeId>
+			<cfStartDate>1958-01-01T00:00:00</cfStartDate>	
+		</cfOrgUnit_PAddr>	
+	</cfOrgUnit>
+	<!-- A Postal Address record -->
+	<cfPAddr>
+	<!-- usual CERIF attributes for Postal Address -->
+		<cfPAddrId>10123451</cfPAddrId>
+		<cfCountryCode>UK</cfCountryCode>
+		<cfAddrline1>7 Oxford Street</cfAddrline1>
+		<cfPostCode>93033</cfPostCode>
+		<cfCityTown>Oxford</cfCityTown>	
+	</cfPAddr>	
+	<!-- Another Postal Address record -->	
+	<cfPAddr>
+	<!-- usual CERIF attributes for Postal Address -->
+		<cfPAddrId>10123452</cfPAddrId>
+		<cfCountryCode>GR</cfCountryCode>
+		<cfAddrline1>48 Vassileos Konstantinou Avenue</cfAddrline1>
+		<cfPostCode>GR-11635</cfPostCode>
+		<cfCityTown>Athens</cfCityTown>	
+	</cfPAddr>	
+</CERIF>

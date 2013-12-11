@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- A file with examples of CERIF XML representation for information in the RMAS Human Resources Area -->
+<CERIF xmlns="urn:xmlns:org:eurocris:cerif-1.5-1" xsi:schemaLocation="urn:xmlns:org:eurocris:cerif-1.5-1 http://www.eurocris.org/Uploads/Web%20pages/CERIF-1.5/CERIF_1.5_1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" release="1.5" date="2012-10-07" sourceDatabase="HR Profile">
+<!-- all uuids employed in the below examples validate according to the CERIF 1.5 RMAS XML scheme -->
+<!-- most of the employed terms (via uuids) are incorporated in the latest CERIF 1.5 vocabulary --> 
+<!-- the latest CERIF vocabulary is available through euroCRIS: http://www.eurocris.org/CERIF-1.5/ -->
+
+<!-- the person template is supposed to also cover student records, these should be recognized by their special identifiers and by the relationships they maintain - but there is no formal constraint as to their recognition in the provided example file. Student-related vocabulary is indicated in the RMAS vocabulary (RMAS area tab in Excel and comments in the RMAS Semantics xml file) -->
+
+	<!-- A person record -->
+	<cfPers>
+		<cfPersId>1123451</cfPersId>
+		<cfBirthdate>1975-01-11</cfBirthdate>
+		<cfGender>m</cfGender>
+		<!-- the following link entities are meant to describe a person's multiple names -->
+		<cfPersName_Pers>
+			<cfPersNameId>9123451</cfPersNameId>
+			<!-- this is the uuid for the term "Presented Name" -->
+			<cfClassId>55f90543-d631-42eb-8d47-d8d9266cbb26</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Names" -->
+			<cfClassSchemeId>7375609d-cfa6-45ce-a803-75de69abe21f</cfClassSchemeId>
+			<cfStartDate>1975-01-11T00:00:00</cfStartDate>
+			<cfFamilyNames>Houssos</cfFamilyNames>
+			<cfFirstNames>Nikos</cfFirstNames>
+		</cfPersName_Pers>		
+		<cfPersName_Pers>
+			<cfPersNameId>9123452</cfPersNameId>
+			<!-- this is the uuid for the term "Passport Name" -->
+			<cfClassId>64f0eb00-462d-4737-8033-7efac82decf3</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Names" --> 
+			<cfClassSchemeId>7375609d-cfa6-45ce-a803-75de69abe21f</cfClassSchemeId>
+			<cfStartDate>1975-01-11T00:00:00</cfStartDate>
+			<cfFamilyNames>Chousos</cfFamilyNames>
+			<cfFirstNames>Nikolaos</cfFirstNames>
+		</cfPersName_Pers>	
+		<cfKeyw cfLangCode="EN" cfTrans="o">CERIF; CRIS; Information Systems</cfKeyw>
+		<cfResInt cfLangCode="EN" cfTrans="o">My research interest is in Research Information Management.</cfResInt>
+		<!-- this link entity is meant to describe a person's title -->
+		<cfPers_Class>
+			<!-- this is the uuid for the term "Dr" -->	
+			<cfClassId>8f558c1a-be74-4d3c-8f19-fdd645b61c0a</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Titles" -->				
+			<cfClassSchemeId>b93fc7ba-90be-4825-a1fd-363bd2fd1432</cfClassSchemeId>
+			<cfStartDate>2004-02-16T14:00:00</cfStartDate>
+		</cfPers_Class>
+		<!-- this link entity is meant to describe a person's qualification -->
+		<cfPers_Class>
+			<!-- this is the uuid for the term "PhD" -->	
+			<cfClassId>223eaa06-3428-44c7-8974-0c55231e2061</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Qualifications" -->
+			<cfClassSchemeId>46fb234b-4561-42fd-8761-ca5f2000b08c</cfClassSchemeId>
+			<cfStartDate>2004-02-16T14:00:00</cfStartDate>
+		</cfPers_Class>	
+		<!-- this link entities are meant to describe a person's contact details -->	
+		<cfPers_EAddr>
+			<!-- this is the internal electronic address identifier of the person -->
+			<cfEAddrId>nhoussos@ekt.gr</cfEAddrId>
+			<!-- this is the uuid for the term "Professional Email" -->				
+			<cfClassId>35d43364-2160-4b6c-a487-5019458321e8</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Contact Details"  -->				
+			<cfClassSchemeId>05cc5ff9-bc58-4743-ab59-46e5013e0039</cfClassSchemeId>
+			<cfStartDate>2006-09-01T00:00:00</cfStartDate>
+		</cfPers_EAddr>
+		<cfPers_PAddr>
+			<!-- this is the internal postal address identifier -->
+			<cfPAddrId>10123455</cfPAddrId>
+			<!-- this is the uuid for the term "Professional Postal Address" -->				
+			<cfClassId>6947fabb-a277-4f8f-b148-c6b41a936c57</cfClassId>
+			<!-- this is the uuid for CERIF scheme "Person Contact Details" -->				
+			<cfClassSchemeId>05cc5ff9-bc58-4743-ab59-46e5013e0039</cfClassSchemeId>
+			<cfStartDate>2006-09-01T00:00:00</cfStartDate>
+		</cfPers_PAddr>	
+		<!-- this link entity is meant to describe the person's employment type -->
+		<cfPers_OrgUnit>
+			<cfOrgUnitId>6123452</cfOrgUnitId>
+			<!-- this is the uuid for the term "Researcher" --> 
+			<cfClassId>ebd55ab0-1cfc-11e1-8bc2-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Employment Types" -->
+			<cfClassSchemeId>e9616dbd-0d38-4b7d-a6cd-3c4df1e95462</cfClassSchemeId>
+			<cfStartDate>2006-09-01T00:00:00</cfStartDate>	
+		</cfPers_OrgUnit>		
+		<!-- this link entity is meant to describe a person's professional relations -->
+		<cfPers_Pers>
+			<cfPersId2>1123453</cfPersId2>
+			<!-- this is the uuid for the term "External Supervisor" -->				
+			<cfClassId>3ccd035b-bc79-477e-aa6c-0bd3606f85c8</cfClassId>
+			<!-- this is the uuid for CERIF scheme "Person Professional Relations" -->				
+			<cfClassSchemeId>6b2b7d24-3491-11e1-b86c-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2004-01-01T00:00:00</cfStartDate>
+			<cfEndDate>2004-02-16T24:00:00</cfEndDate>	
+		</cfPers_Pers>
+		<!-- this is an embedded federated identifier record for the person - e.g. the full-fledged ResearcherID -->
+		<cfFedId>
+			<!-- this is the system-internal identifier of the imported federated identifier if available-->
+			<cfFedIdId>14123455</cfFedIdId>
+			<!-- this is the ResearcherID of this person -->
+			<cfFedId>F-8684-2012</cfFedId> 
+			<cfStartDate>2012-07-30T18:15:00</cfStartDate>			
+			<cfFedId_Class>
+				<!-- this is the uuid for the term "ResearcherID"  -->
+				<cfClassId>b4a7caf0-5257-411e-accc-d1ee70d2f701</cfClassId>
+				<!-- this is the uuid for the CERIF scheme "Identifier Types" -->				
+				<cfClassSchemeId>bccb3266-689d-4740-a039-c96594b4d916</cfClassSchemeId>
+			</cfFedId_Class>
+			<!-- this link entity is meant to describe the service that issued the identifier -->
+			<cfFedId_Srv> 
+				<!-- this is the system-internal service identifier that issued the federated identifier -->
+				<cfSrvId>5123457</cfSrvId>
+				<!-- this is the uuid for the term "Issuer"  -->				
+				<cfClassId>eda2b2e2-34c5-11e1-b86c-0800200c9a66</cfClassId>
+				<!-- this is the uuid for CERIF scheme "Identifier Service Roles" -->					
+				<cfClassSchemeId>5a270628-f593-4ff4-a44a-95660c76e182</cfClassSchemeId>
+			</cfFedId_Srv>			
+		</cfFedId>						
+	</cfPers>
+
+	<!-- A person record -->
+	<cfPers>
+		<cfPersId>1123452</cfPersId>
+		<cfBirthdate>1962-01-01</cfBirthdate>
+		<cfGender>f</cfGender>
+		<!-- these link entities are meant to describe a person's multiple names -->
+		<cfPersName_Pers>
+			<cfPersNameId>9123453</cfPersNameId>
+			<!-- this is the uuid for the term "Presented Name"  -->
+			<cfClassId>55f90543-d631-42eb-8d47-d8d9266cbb26</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Names" -->
+			<cfClassSchemeId>7375609d-cfa6-45ce-a803-75de69abe21f</cfClassSchemeId>
+			<cfStartDate>1962-01-01T00:00:00</cfStartDate>
+			<cfFamilyNames>Jones</cfFamilyNames>
+			<cfFirstNames>Mary</cfFirstNames>
+		</cfPersName_Pers>
+		<cfKeyw cfLangCode="EN" cfTrans="o">Information Extraction; Text Mining; Data Mining</cfKeyw>
+		<cfResInt cfLangCode="EN" cfTrans="o">Information Extraction; Text Mining; Data Mining</cfResInt>
+		<!-- this link entity is meant to describe a person's titles -->	
+		<cfPers_Class>
+			<!-- this is the uuid for the term "Dr" -->			
+			<cfClassId>8f558c1a-be74-4d3c-8f19-fdd645b61c0a</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Titles" -->				
+			<cfClassSchemeId>b93fc7ba-90be-4825-a1fd-363bd2fd1432</cfClassSchemeId>
+			<cfStartDate>2000-03-12T00:00:00</cfStartDate>
+		</cfPers_Class>
+		<!-- this link entity is meant to describe a person's contact details -->	
+		<cfPers_PAddr>
+			<cfPAddrId>10123453</cfPAddrId>
+			<!-- this is the uuid for the term "Person Professional Postal Address" -->				
+			<cfClassId>6947fabb-a277-4f8f-b148-c6b41a936c57</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Contact Details" -->				
+			<cfClassSchemeId>05cc5ff9-bc58-4743-ab59-46e5013e0039</cfClassSchemeId>			
+			<cfStartDate>2002-01-01T00:00:00</cfStartDate>	
+		</cfPers_PAddr>
+		<cfPers_OrgUnit>
+			<cfOrgUnitId>6123451</cfOrgUnitId>
+			<!-- this is the uuid for the term "Academic Research" -->
+			<cfClassId>fd742fb8-fa7f-40b4-a015-c7deb93902f6</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Employment Types" -->
+			<cfClassSchemeId>e9616dbd-0d38-4b7d-a6cd-3c4df1e95462</cfClassSchemeId>
+			<cfStartDate>2002-01-01T00:00:00</cfStartDate>	
+		</cfPers_OrgUnit>
+		<cfProj_Pers>
+			<cfProjId>3123451</cfProjId>
+			<!-- this is the uuid for the term "Principal Investigator" -->				
+			<cfClassId>b0e11470-1cfd-11e1-8bc2-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Project Engagements"  -->				
+			<cfClassSchemeId>94fefd50-1d00-11e1-8bc2-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>
+		</cfProj_Pers>	
+	</cfPers>
+	
+	<!-- A person record -->
+	<cfPers>
+		<cfPersId>1123453</cfPersId>
+		<cfBirthdate>1962-01-01</cfBirthdate>
+		<cfGender>m</cfGender>
+		<cfPersName_Pers>
+			<cfPersNameId>9123454</cfPersNameId>
+			<!-- this is the uuid for the term "Presented Name" -->
+			<cfClassId>55f90543-d631-42eb-8d47-d8d9266cbb26</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Names" -->
+			<cfClassSchemeId>7375609d-cfa6-45ce-a803-75de69abe21f</cfClassSchemeId>
+			<cfStartDate>1962-01-01T00:00:00</cfStartDate>
+			<cfFamilyNames>Papadopoulos</cfFamilyNames>
+			<cfFirstNames>Dimitris</cfFirstNames>
+		</cfPersName_Pers>	
+		<cfKeyw cfLangCode="EN" cfTrans="o">Metabolic Engineering; Medical Informatics</cfKeyw>
+		<cfResInt cfLangCode="EN" cfTrans="o">My research interests lie in the areas of Metabolic Engineering and  Medical Informatics.</cfResInt>
+		<cfPers_Class>
+			<!-- this is the uuid for the term "Dr" -->			
+			<cfClassId>8f558c1a-be74-4d3c-8f19-fdd645b61c0a</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Titles" uuid-->				
+			<cfClassSchemeId>b93fc7ba-90be-4825-a1fd-363bd2fd1432</cfClassSchemeId>			
+			<cfStartDate>2004-06-30T00:00:00</cfStartDate>	
+		</cfPers_Class>
+		<cfPers_Class>
+			<!-- this is the uuid for term "PhD" -->		
+			<cfClassId>223eaa06-3428-44c7-8974-0c55231e2061</cfClassId>
+			<cfClassSchemeId>46fb234b-4561-42fd-8761-ca5f2000b08c</cfClassSchemeId>
+			<cfStartDate>2004-06-30T00:00:00</cfStartDate>
+		</cfPers_Class>		
+		<cfPers_EAddr>
+			<cfEAddrId>dimitris@eie.gr</cfEAddrId>
+			<!-- this is the uuid for the term "Professional Email" -->				
+			<cfClassId>35d43364-2160-4b6c-a487-5019458321e8</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Contact Details" -->				
+			<cfClassSchemeId>05cc5ff9-bc58-4743-ab59-46e5013e0039</cfClassSchemeId>			
+			<cfStartDate>2005-09-01T00:00:00</cfStartDate>
+		</cfPers_EAddr>
+		<cfPers_PAddr>
+			<cfPAddrId>10123454</cfPAddrId>
+			<!-- this is the uuid for the term "Professional Postal Address" -->				
+			<cfClassId>6947fabb-a277-4f8f-b148-c6b41a936c57</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Contact Details" -->				
+			<cfClassSchemeId>05cc5ff9-bc58-4743-ab59-46e5013e0039</cfClassSchemeId>			
+			<cfStartDate>2005-09-01T00:00:00</cfStartDate>
+		</cfPers_PAddr>
+		<cfPers_Event>
+			<cfEventId>13123451</cfEventId>
+			<!-- this is the uuid for the term "Contributor" -->				
+			<cfClassId>e4d7b130-1cfd-11e1-8bc2-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Event Involvements" -->			
+			<cfClassSchemeId>b4de9a8f-3a4d-4233-9a9f-3b624e4ad74f</cfClassSchemeId>
+			<cfStartDate>2011-08-30T00:00:00</cfStartDate>
+			<cfEndDate>2011-09-03T24:00:00</cfEndDate>
+		</cfPers_Event>		
+		<cfPers_OrgUnit>
+			<cfOrgUnitId>6123452</cfOrgUnitId>
+			<!-- this is the uuid for the term "Academic Research" -->
+			<cfClassId>ebd55ab0-1cfc-11e1-8bc2-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Employment Types" -->
+			<cfClassSchemeId>e9616dbd-0d38-4b7d-a6cd-3c4df1e95462</cfClassSchemeId>
+			<cfStartDate>2005-09-01T00:00:00</cfStartDate>	
+		</cfPers_OrgUnit>
+		<cfPers_ResPubl>
+			<cfResPublId>2123451</cfResPublId>
+			<!-- this is the uuid for the term "Author" -->				
+			<cfClassId>49815870-1cfe-11e1-8bc2-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Output Contributions" -->				
+			<cfClassSchemeId>b7135ad0-1d00-11e1-8bc2-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2009-10-01T00:00:00</cfStartDate>			
+		</cfPers_ResPubl>
+		<cfPers_ResPubl>
+			<cfResPublId>2123452</cfResPublId>
+			<!-- this is the uuid for term "Author" -->				
+			<cfClassId>49815870-1cfe-11e1-8bc2-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Output Contributions" -->				
+			<cfClassSchemeId>b7135ad0-1d00-11e1-8bc2-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2011-05-31T24:00:00</cfStartDate>		
+		</cfPers_ResPubl>	
+		<cfPers_ResProd>
+			<cfResProdId>8123451</cfResProdId>
+			<!-- this is the uuid for the term "Contributor" -->				
+			<cfClassId>e4d7b130-1cfd-11e1-8bc2-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Output Contributions"  -->				
+			<cfClassSchemeId>b7135ad0-1d00-11e1-8bc2-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2011-03-31T24:00:00</cfStartDate>			
+		</cfPers_ResProd>
+		<cfPers_ResPat>
+			<cfResPatId>7123451</cfResPatId>
+			<!-- this is the uuid for the term "Contributor" -->				
+			<cfClassId>e4d7b130-1cfd-11e1-8bc2-0800200c9a66</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Output Contributions" -->				
+			<cfClassSchemeId>b7135ad0-1d00-11e1-8bc2-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2010-04-01T00:00:00</cfStartDate>		
+		</cfPers_ResPat>		
+		<cfProj_Pers>
+			<cfProjId>3123451</cfProjId>
+			<!-- this is the uuid for the term "Collaborator" -->				
+			<cfClassId>541b4224-a784-49b7-a341-8275ce874ada</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Project Engagements" -->				
+			<cfClassSchemeId>94fefd50-1d00-11e1-8bc2-0800200c9a66</cfClassSchemeId>			
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>		
+		</cfProj_Pers>
+		<cfProj_Pers>
+			<cfProjId>3123451</cfProjId>
+			<!-- this is the uuid for the term "Highly Qualified Personnel" -->					
+			<cfClassId>65c14308-310c-4198-be0b-43a6a1697038</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Project Engagements" -->				
+			<cfClassSchemeId>94fefd50-1d00-11e1-8bc2-0800200c9a66</cfClassSchemeId>
+			<cfStartDate>2009-02-01T00:00:00</cfStartDate>
+			<cfEndDate>2012-01-31T24:00:00</cfEndDate>		
+		</cfProj_Pers>		
+	</cfPers>
+	
+	<!-- A Student record -->
+	<cfPers>
+		<cfPersId>s_1123453</cfPersId>
+		<cfBirthdate>1998-04-01</cfBirthdate>
+		<cfGender>f</cfGender>
+		<cfPersName_Pers>
+			<cfPersNameId>91234500</cfPersNameId>
+			<!-- this is the uuid for the term "Presented Name" -->
+			<cfClassId>55f90543-d631-42eb-8d47-d8d9266cbb26</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Names" -->
+			<cfClassSchemeId>7375609d-cfa6-45ce-a803-75de69abe21f</cfClassSchemeId>
+			<cfStartDate>1962-01-01T00:00:00</cfStartDate>
+			<cfFamilyNames>Jorgas</cfFamilyNames>
+			<cfFirstNames>Brigitta</cfFirstNames>
+		</cfPersName_Pers>	
+		<cfKeyw cfLangCode="EN" cfTrans="o">Ontologies; Information Systems</cfKeyw>
+		<!-- this link is especially meant for the Students records -->
+		<!-- this link entity is meant to describe a person's degree levels of study -->		
+		<cfPers_Srv>
+			<cfSrvId>012121</cfSrvId>
+			<!-- this is the uuid for the term "Higher Doctorate" -->				
+			<cfClassId>73451d3c-9afa-4484-8404-cd1518ef508b</cfClassId>
+			<!-- this is the uuid for the CERIF scheme "Person Degree Levels of Study" -->				
+			<cfClassSchemeId>a1a55095-45c2-456c-9869-add5d726c676</cfClassSchemeId>
+			<cfStartDate>2010-01-01T00:00:00</cfStartDate>		
+		</cfPers_Srv>			
+	</cfPers>
+
+	<!-- A Postal Address record -->		
+	<cfPAddr>
+	<!-- some usual CERIF attributes for a postal address -->
+		<cfPAddrId>10123453</cfPAddrId>
+		<cfCountryCode>UK</cfCountryCode>
+		<cfAddrline1>University of Oxford</cfAddrline1>
+		<cfAddrline2>Artificial Intelligence Group</cfAddrline2>
+		<cfAddrline4>7 Oxford Street</cfAddrline4> 
+		<cfPostCode>93033</cfPostCode>
+		<cfCityTown>Oxford</cfCityTown>	
+	</cfPAddr>
+
+	<!-- A Postal Address record  -->		
+	<cfPAddr>
+	<!-- usual CERIF attributes for postal address -->
+		<cfPAddrId>10123454</cfPAddrId>
+		<cfCountryCode>GR</cfCountryCode>
+		<cfAddrline1>National Hellenic Research Foundation (N.H.R.F.)</cfAddrline1>
+		<cfAddrline3>48 Vassileos Konstantinou Avenue</cfAddrline3>	
+		<cfPostCode>GR-11635</cfPostCode>
+		<cfCityTown>Athens</cfCityTown>		
+	</cfPAddr>	
+
+	<!-- A Postal Address record -->	
+	<cfPAddr>
+	<!-- usual CERIF attributes for Postal Address -->
+		<cfPAddrId>10123455</cfPAddrId>
+		<cfCountryCode>GR</cfCountryCode>
+		<cfAddrline1>National Documentation Centre (E.K.T.)</cfAddrline1>		
+		<cfAddrline2>National Hellenic Research Foundation (N.H.R.F.)</cfAddrline2>
+		<cfAddrline3>48 Vassileos Konstantinou Avenue</cfAddrline3>	
+		<cfPostCode>GR-11635</cfPostCode>
+		<cfCityTown>Athens</cfCityTown>		
+	</cfPAddr>		
+	
+	<!-- An Event record -->
+	<cfEvent>
+		<!-- usual CERIF attributes for Event -->
+		<cfEventId>13123451</cfEventId>
+		<cfCountryCode>US</cfCountryCode>
+		<cfCityTown>Boston</cfCityTown>	
+		<cfStartDate>2011-08-30</cfStartDate>
+		<cfEndDate>2011-09-03</cfEndDate>	
+		<cfURI>http://embc2011.embs.org/</cfURI>	
+		<cfName cfLangCode="EN" cfTrans="o">33rd Annual International Conference of the 
+IEEE Engineering in Medicine and Biology Society</cfName>
+	</cfEvent>	
+	
+	<!-- A Service record -->	
+	<cfSrv>
+		<!-- usual CERIF attributes for Service -->	
+		<cfSrvId>5123457</cfSrvId>
+		<cfName cfLangCode="en" cfTrans="o">ResearcherID issuer service</cfName>
+		<cfDescr cfLangCode="en" cfTrans="o">The service of issuing ResearcherIDs</cfDescr>
+		<cfKeyw cfLangCode="en" cfTrans="o">persistent identifier; ResearcherID</cfKeyw>
+	</cfSrv>
+			
+</CERIF>
