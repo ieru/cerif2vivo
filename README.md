@@ -26,3 +26,5 @@ Example: java -jar saxon9he.jar -ext:on Example.owl VIVOCerif.xsl > outp.xml
 Cerif-Vivo:
 java -jar saxon9he.jar -ext:on <CerifFile(xml)> CerifVivo.xsl > <OutputFileVivo(owl)>
 Example: java -jar saxon9he.jar -ext:on Example.xml CerifVivo.xsl > outp.owl
+
+The xsl sheets we have used, are stored in the corresponding folder. Also a VIVO and Cerif instance is at Examples folder, so you can test the tool.
